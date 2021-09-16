@@ -18,6 +18,7 @@
         <item name="snackbarStyle">@style/Widget.Notes.Snackbar</item>
         <item name="snackbarButtonStyle">@style/Widget.Notes.SnackbarButton</item>
         <item name="materialAlertDialogTheme">@style/ThemeOverlay.Notes.MaterialAlertDialog</item>
+        <item name="searchViewStyle">@style/Widget.Notes.SearchView</item>
     </style>
 
     <!-- Toolbar style -->
@@ -43,5 +44,9 @@
     <!-- MaterialAlertDialog style -->
     <style name="ThemeOverlay.Notes.MaterialAlertDialog" parent="ThemeOverlay.MaterialComponents.MaterialAlertDialog">
         <item name="colorPrimary">@color/colorSecondary</item>
+    </style>
+
+    <style name="Widget.Notes.SearchView" parent="Widget.AppCompat.SearchView">
+        <item name="searchHintIcon">@null</item>
     </style>
 </resources>

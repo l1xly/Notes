@@ -2,11 +2,9 @@ package com.l1xly.notes.ui.adapters
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
-import androidx.navigation.findNavController
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
-import com.l1xly.notes.R
 import com.l1xly.notes.databinding.ItemNoteBinding
 import com.l1xly.notes.models.Note
 import com.l1xly.notes.utils.getDateFormat

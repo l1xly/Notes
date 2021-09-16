@@ -114,20 +114,20 @@ class HomeFragment : Fragment(), SearchView.OnQueryTextListener {
 
     override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
         inflater.inflate(R.menu.menu_home, menu)
-//        setIcon(menu.findItem(R.id.change_layout))
-
+        setIcon(menu.findItem(R.id.change_layout))
         val searchView = menu.findItem(R.id.search).actionView as SearchView
+        searchView.queryHint = getString(R.string.search_notes)
         searchView.setOnQueryTextListener(this)
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         return when (item.itemId) {
-//            R.id.change_layout -> {
-//                isLinearLayoutManager = !isLinearLayoutManager
-//                chooseLayout()
-//                setIcon(item)
-//                true
-//            }
+            R.id.change_layout -> {
+                isLinearLayoutManager = !isLinearLayoutManager
+                chooseLayout()
+                setIcon(item)
+                true
+            }
 //
 //            R.id.more -> {
 //
