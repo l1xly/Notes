@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1f1d2b</color>
+    <color name="colorOnPrimary">@color/white</color>
+    <color name="colorPrimaryVariant">#0f0e15</color>
+    <color name="colorSecondary">#7c7cdd</color>
+    <color name="colorOnSecondary">@color/white</color>
+    <color name="colorOnSurface">@color/white</color>
+</resources>

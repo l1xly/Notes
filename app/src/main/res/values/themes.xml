@@ -1,0 +1,47 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Theme.Notes" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary color -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorOnPrimary">@color/colorOnPrimary</item>
+        <item name="colorPrimaryVariant">@color/colorPrimaryVariant</item>
+        <!-- Secondary color -->
+        <item name="colorSecondary">@color/colorSecondary</item>
+        <item name="colorOnSecondary">@color/colorOnSecondary</item>
+        <!-- Surface color -->
+        <item name="colorOnSurface">@color/colorOnSurface</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">@color/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:navigationBarColor">@color/colorPrimary</item>
+        <item name="android:windowLightNavigationBar">true</item>
+        <item name="snackbarStyle">@style/Widget.Notes.Snackbar</item>
+        <item name="snackbarButtonStyle">@style/Widget.Notes.SnackbarButton</item>
+        <item name="materialAlertDialogTheme">@style/ThemeOverlay.Notes.MaterialAlertDialog</item>
+    </style>
+
+    <!-- Toolbar style -->
+    <style name="Widget.Notes.Toolbar" parent="Widget.MaterialComponents.Toolbar.Primary">
+        <item name="materialThemeOverlay">@style/ThemeOverlay.Notes.Toolbar</item>
+    </style>
+    <style name="ThemeOverlay.Notes.Toolbar" parent="">
+        <!--Color of icons-->
+        <item name="colorOnPrimary">@color/colorOnPrimary</item>
+    </style>
+
+    <!-- Snackbar style -->
+    <style name="Widget.Notes.Snackbar" parent="Widget.MaterialComponents.Snackbar">
+        <item name="materialThemeOverlay">@style/ThemeOverlay.Notes.Snackbar</item>
+    </style>
+    <style name="ThemeOverlay.Notes.Snackbar" parent="">
+        <item name="colorOnSurface">@color/black</item>
+    </style>
+    <style name="Widget.Notes.SnackbarButton" parent="Widget.MaterialComponents.Button.TextButton.Snackbar">
+        <item name="android:textColor">?attr/colorSecondary</item>
+    </style>
+
+    <!-- MaterialAlertDialog style -->
+    <style name="ThemeOverlay.Notes.MaterialAlertDialog" parent="ThemeOverlay.MaterialComponents.MaterialAlertDialog">
+        <item name="colorPrimary">@color/colorSecondary</item>
+    </style>
+</resources>

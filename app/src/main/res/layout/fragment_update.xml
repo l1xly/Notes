@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="17dp"
+    tools:context=".ui.fragments.AddFragment">
+
+    <EditText
+        android:id="@+id/title_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:background="@null"
+        android:hint="@string/title"
+        android:inputType="textCapWords|textCapSentences|textMultiLine|textFilter"
+        android:textColor="?attr/colorOnSurface"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/lastEditDate_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:textColor="?attr/colorOnSurface"
+        android:textSize="12sp"
+        tools:text="January 21, 18:29 Mon" />
+
+    <EditText
+        android:id="@+id/note_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:hint="@string/note"
+        android:inputType="textCapWords|textCapSentences|textMultiLine|textFilter"
+        android:textColor="?attr/colorOnSurface"
+        android:textSize="16sp" />
+</LinearLayout>
