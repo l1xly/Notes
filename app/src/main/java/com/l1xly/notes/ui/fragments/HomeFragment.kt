@@ -3,7 +3,6 @@ package com.l1xly.notes.ui.fragments
 import android.os.Bundle
 import android.view.*
 import androidx.appcompat.widget.SearchView
-import androidx.appcompat.app.AppCompatDelegate
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import androidx.navigation.fragment.findNavController
@@ -128,12 +127,6 @@ class HomeFragment : Fragment(), SearchView.OnQueryTextListener {
                 setIcon(item)
                 true
             }
-//
-//            R.id.more -> {
-//
-//                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
-//                true
-//            }
 
             else -> super.onOptionsItemSelected(item)
         }
